@@ -13,3 +13,11 @@ func (c cell) age(aliveNeighbors uint8) cell {
 	}
 	return cell{false}
 }
+
+func (c cell) String() string {
+	if c.alive {
+		return "■"
+	} else {
+		return "□"
+	}
+}
